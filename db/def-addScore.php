@@ -1,6 +1,6 @@
 <?php
 	require_once __DIR__ . '/init-$conn.php';
-	function addScore($playername, $scorevalue, $gameid) {
+	function addScore($gameid, $playername, $scorevalue) {
 		global $conn;
 		// if (!isset($_POST['pname'])) { die("Missing param p1641"); }
 		// if (!isset($_POST['score'])) { die("Missing param ss114"); }

@@ -7,7 +7,8 @@
 		case 1: $gameid = 81; break;
 		case 2: $gameid = 82; break;
 		case 3: $gameid = 83; break;
-		default: die("{err:'invalid param value: mode (must be 1, 2, or 3)'}");
+		case 10: $gameid = 90; break;
+		default: die("{err:'invalid param value: mode (must be 1, 2, 3, or 10)'}");
 	}
 	require_once __DIR__ . '/../db/def-getNear.php';
 	getNear($gameid, $personal_name, $_GET['score']);
